@@ -13,11 +13,13 @@ public class MainApp {
 
         double result = product.getTotalAmount();
 
-        if (result > product.minimumExpense)
-        System.out.println("the original price was: " + amount + " ,and after discount it's: " + result +
-                " ,total discount: " + product.discount);
-     else
-        System.out.println("total price: " + amount);
+        if (result > product.minimumExpense) {
+            System.out.println("the original price was: " + amount + " ,and after discount it's: " + result +
+                    " ,total discount: " + product.discount);
+        }
+     else {
+            System.out.println("total price: " + amount);
+        }
 
         // Indien het bedrag groter is dan 5000 euro, dan wordt er een korting van 5 % toegestaan
 
