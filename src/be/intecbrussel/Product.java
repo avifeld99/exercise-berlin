@@ -2,10 +2,8 @@ package be.intecbrussel;
 
 public class Product {
 
-    private double amount;
-    private final double discountPercentage = 0.05;
+    private final double amount;
     public final double minimumExpense = 5000;
-
     public double discount;
 
     public Product(double amount) {
@@ -14,6 +12,7 @@ public class Product {
 
     public double getTotalAmount() {
         double result = amount;
+        double discountPercentage = 0.05;
         this.discount = amount * discountPercentage;
 
         if (this.amount >= this.minimumExpense) {
