@@ -16,8 +16,7 @@ public class MainApp {
         if (result > product.minimumExpense) {
             System.out.println("the original price was: " + amount + " ,and after discount it's: " + result +
                     " ,total discount: " + product.discount);
-        }
-     else {
+        } else {
             System.out.println("total price: " + amount);
         }
 
